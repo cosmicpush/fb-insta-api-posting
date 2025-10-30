@@ -1,0 +1,2 @@
+# Run the FB/Instagram poster every hour from 09:30 to 21:30 IST (04:00-16:00 UTC)
+0 4-16 * * * cd /Users/devashishsharma/Documents/GitHub/fb-insta-api-posting && /usr/bin/env python3 -m fb_insta_poster
