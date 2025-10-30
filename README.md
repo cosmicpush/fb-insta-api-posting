@@ -6,7 +6,7 @@ Automates Instagram and Facebook image posts by selecting a random PNG from an O
 - Python 3.10+
 - OCI credentials (via `~/.oci/config`) with access to the `FB_INSTA_BUCKET` (default: `12amstories`)
 - Meta Graph API access tokens for the target Instagram business account and Facebook page
-- Claude API key with access to the latest vision-capable model (default: `claude-3-5-sonnet-20241022`)
+- Claude API key with access to the latest vision-capable model (default: `claude-sonnet-4-5-20250929`)
 
 ## Setup
 1. Install dependencies:
@@ -72,5 +72,5 @@ Optional tuning:
 - `FB_INSTA_PRESIGN_EXPIRATION_SECONDS` to adjust presigned URL validity
 - `FB_INSTA_CLAUDE_MODEL` to target a different Claude vision model
 - `FB_INSTA_CLAUDE_MAX_TOKENS` to change the caption response limit
-- `FB_INSTA_CAPTION_FALLBACK` to set fallback text if the Claude request fails
+- `FB_INSTA_CAPTION_FALLBACK` to set fallback text if Claude succeeds but returns no text
 - `FB_INSTA_ENABLE_CAPTIONING` to toggle Claude caption generation (set to `false` for silent posts)

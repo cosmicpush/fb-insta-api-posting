@@ -98,7 +98,7 @@ def load_settings() -> Settings:
         media_poll_interval_seconds=media_poll_interval_seconds,
         anthropic_api_key=anthropic_api_key,
         claude_model=os.environ.get(
-            "FB_INSTA_CLAUDE_MODEL", "claude-3-5-sonnet-20241022"
+            "FB_INSTA_CLAUDE_MODEL", "claude-sonnet-4-5-20250929"
         ),
         claude_max_tokens=claude_max_tokens,
         caption_fallback=os.environ.get(
